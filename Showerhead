@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AURA | The Step Zero of Skincare</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts: Playfair Display & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              gold: '#C5A880',
+              goldLight: '#E8DCC4',
+              goldDark: '#9C7A4E',
+              dark: '#111215',
+              surface: '#1A1C20',
+              card: '#22252A',
+              border: '#2E323A',
+              muted: '#8E94A0'
+            }
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'serif'],
+            sans: ['Inter', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-brand-dark text-slate-100 font-sans antialiased selection:bg-brand-gold selection:text-brand-dark">
+
+  <!-- TOP BANNER -->
+  <div class="bg-brand-goldDark text-black text-xs font-semibold tracking-widest text-center py-2 px-4 uppercase">
+    Complimentary Worldwide Express Delivery + 90-Day Skin & Hair Guarantee
+  </div>
+
+  <!-- NAVIGATION -->
+  <nav class="sticky top-0 z-50 bg-brand-dark/90 backdrop-blur-md border-b border-brand-border">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="#" class="font-serif text-2xl tracking-[0.25em] text-brand-gold font-semibold uppercase">
+        A U R A
+      </a>
+      <div class="hidden md:flex items-center space-x-8 text-sm text-slate-300 font-medium tracking-wider uppercase">
+        <a href="#problem" class="hover:text-brand-gold transition-colors">The Problem</a>
+        <a href="#engineering" class="hover:text-brand-gold transition-colors">Engineering</a>
+        <a href="#timeline" class="hover:text-brand-gold transition-colors">Results</a>
+        <a href="#reviews" class="hover:text-brand-gold transition-colors">Clinical Proof</a>
+      </div>
+      <a href="#pricing" class="bg-brand-gold hover:bg-brand-goldDark text-black font-semibold px-6 py-2.5 rounded-full text-xs uppercase tracking-widest transition-all transform hover:scale-105">
+        Experience The Ritual
+      </a>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <header class="relative overflow-hidden pt-12 pb-24 lg:pt-20 lg:pb-32">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      
+      <!-- Left Content -->
+      <div class="lg:col-span-7 space-y-6 text-left">
+        <div class="inline-flex items-center space-x-2 bg-brand-surface border border-brand-border px-3.5 py-1.5 rounded-full">
+          <span class="w-2 h-2 rounded-full bg-brand-gold animate-pulse"></span>
+          <span class="text-xs uppercase tracking-widest text-brand-gold font-medium">The Step Zero of Daily Skincare</span>
+        </div>
+        
+        <h1 class="font-serif text-4xl sm:text-6xl font-normal leading-[1.1] text-white">
+          Stop washing your face and hair with <span class="italic text-brand-gold">tap water.</span>
+        </h1>
+        
+        <p class="text-slate-400 text-lg sm:text-xl font-light leading-relaxed max-w-2xl">
+          The world’s first solid-brass, vortex-aerated filtration fixture. Neutralizes 99% of harsh chlorine and heavy metals before you apply a single drop of serum.
+        </p>
+
+        <!-- CTAs -->
+        <div class="pt-4 flex flex-col sm:flex-row items-start sm:items-center space-y-4 sm:space-y-0 sm:space-x-4">
+          <a href="#pricing" class="w-full sm:w-auto text-center bg-brand-gold hover:bg-brand-goldDark text-black font-bold px-8 py-4 rounded-full text-sm uppercase tracking-widest transition-all transform hover:scale-105 shadow-lg shadow-brand-gold/10">
+            Claim Your Fixture — $219
+          </a>
+          <span class="text-xs text-brand-muted uppercase tracking-wider pl-1">
+            Includes 90-day filter core + tool-free install kit
+          </span>
+        </div>
+
+        <!-- Social Proof Metric -->
+        <div class="pt-6 flex items-center space-x-3 border-t border-brand-border">
+          <div class="flex text-brand-gold">
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+          </div>
+          <p class="text-xs text-slate-300 tracking-wide">
+            Rated <span class="font-bold text-white">4.9/5</span> by over 12,000 dermatologists & skinvestors
+          </p>
+        </div>
+      </div>
+
+      <!-- Right Visual Card -->
+      <div class="lg:col-span-5 relative">
+        <div class="relative bg-gradient-to-b from-brand-surface to-brand-dark p-8 rounded-3xl border border-brand-border shadow-2xl">
+          <div class="absolute -top-3 right-6 bg-brand-gold text-black text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+            Solid C360 Brass
+          </div>
+          
+          <!-- Mock Graphic Representation -->
+          <div class="h-96 w-full rounded-2xl bg-brand-card flex flex-col items-center justify-center p-6 border border-brand-border/60 relative overflow-hidden group">
+            <div class="w-24 h-64 border-2 border-brand-gold/40 rounded-full relative flex flex-col items-center justify-between p-2">
+              <div class="w-full h-24 bg-gradient-to-b from-brand-gold to-brand-goldDark rounded-t-full flex items-center justify-center text-[10px] font-bold text-black uppercase">
+                Vortex
+              </div>
+              <div class="w-full h-32 bg-slate-800 rounded-b-full border border-brand-border flex flex-col justify-around py-2 px-1 text-center">
+                <span class="text-[8px] text-brand-gold">KDF-55</span>
+                <span class="text-[8px] text-slate-300">CaSO₃</span>
+                <span class="text-[8px] text-slate-400">Carbon</span>
+              </div>
+            </div>
+            <p class="mt-6 font-serif text-sm italic text-brand-goldLight text-center">
+              "The Architectural Helix" in Brushed Champagne Gold
+            </p>
+          </div>
+
+          <!-- Feature Bullets below image -->
+          <div class="mt-6 grid grid-cols-2 gap-4 text-xs text-slate-300 border-t border-brand-border pt-4">
+            <div class="flex items-center space-x-2">
+              <i data-lucide="droplet" class="w-4 h-4 text-brand-gold"></i>
+              <span>280 Micro-Jets</span>
+            </div>
+            <div class="flex items-center space-x-2">
+              <i data-lucide="shield-check" class="w-4 h-4 text-brand-gold"></i>
+              <span>Zero Painted Plastic</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- SECTION 1: PROBLEM AGITATION -->
+  <section id="problem" class="py-24 bg-brand-surface border-y border-brand-border">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="max-w-3xl mb-16">
+        <h2 class="text-xs font-semibold tracking-widest text-brand-gold uppercase mb-3">The Hidden Saboteur</h2>
+        <p class="font-serif text-3xl sm:text-5xl font-normal text-white">
+          Your $120 serums are actively fighting your bathroom pipes.
+        </p>
+        <p class="mt-4 text-slate-400 font-light text-base sm:text-lg">
+          You invest in clinical retinols, hyaluronic acids, and salon hair care. Yet every morning, high-heat municipal tap water compromises your lipid barrier before you even step out of the shower.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Card 1 -->
+        <div class="bg-brand-card p-8 rounded-2xl border border-brand-border/80 hover:border-brand-gold/50 transition-all">
+          <div class="w-12 h-12 rounded-xl bg-brand-dark flex items-center justify-center mb-6 text-brand-gold">
+            <i data-lucide="scissors" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-lg font-semibold text-white mb-2">The Hair Breakage Cycle</h3>
+          <p class="text-sm text-slate-400 leading-relaxed">
+            Free chlorine oxidizes keratin proteins, lifting the hair cuticle and causing chronic frizz, rapid color fading on salon balayage, and excessive shedding in the drain.
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-brand-card p-8 rounded-2xl border border-brand-border/80 hover:border-brand-gold/50 transition-all">
+          <div class="w-12 h-12 rounded-xl bg-brand-dark flex items-center justify-center mb-6 text-brand-gold">
+            <i data-lucide="activity" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-lg font-semibold text-white mb-2">Compromised Skin Barrier</h3>
+          <p class="text-sm text-slate-400 leading-relaxed">
+            Heavy water minerals crystalize inside open pores, triggering micro-inflammation, eczema flare-ups, and the persistent post-shower tightness you've learned to tolerate.
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-brand-card p-8 rounded-2xl border border-brand-border/80 hover:border-brand-gold/50 transition-all">
+          <div class="w-12 h-12 rounded-xl bg-brand-dark flex items-center justify-center mb-6 text-brand-gold">
+            <i data-lucide="gauge" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-lg font-semibold text-white mb-2">The Pressure Compromise</h3>
+          <p class="text-sm text-slate-400 leading-relaxed">
+            Cheap eco-friendly heads simply throttle flow down to a weak, unsatisfying drizzle. Our Venturi air-induction triples spray velocity while cutting water waste by 35%.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2: ENGINEERING DIFFERENCE -->
+  <section id="engineering" class="py-24 max-w-7xl mx-auto px-6">
+    <div class="text-center max-w-2xl mx-auto mb-16">
+      <h2 class="text-xs font-semibold tracking-widest text-brand-gold uppercase mb-3">Architectural Engineering</h2>
+      <p class="font-serif text-3xl sm:text-4xl font-normal text-white">Built like luxury hardware, not disposable plumbing.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="bg-brand-surface p-6 rounded-xl border border-brand-border">
+        <span class="text-brand-gold font-mono text-xs">01</span>
+        <h4 class="text-base font-semibold text-white mt-2 mb-2">Solid C360 Brass Body</h4>
+        <p class="text-xs text-slate-400 leading-relaxed">
+          Machined from solid architectural brass with scratch-resistant PVD coating. Substantial in the hand and built to last a lifetime.
+        </p>
+      </div>
+
+      <div class="bg-brand-surface p-6 rounded-xl border border-brand-border">
+        <span class="text-brand-gold font-mono text-xs">02</span>
+        <h4 class="text-base font-semibold text-white mt-2 mb-2">5-Stage Medical Filtration</h4>
+        <p class="text-xs text-slate-400 leading-relaxed">
+          KDF-55 redox copper-zinc alloy, calcium sulfite, and activated carbon fiber neutralize chlorine instantly at high shower temperatures.
+        </p>
+      </div>
+
+      <div class="bg-brand-surface p-6 rounded-xl border border-brand-border">
+        <span class="text-brand-gold font-mono text-xs">03</span>
+        <h4 class="text-base font-semibold text-white mt-2 mb-2">280 Laser Micro-Jets</h4>
+        <p class="text-xs text-slate-400 leading-relaxed">
+          Femtosecond-drilled micro-apertures aerate water, transforming standard flow into an ultra-dense, silky rinse stream that quickly lifts conditioner.
+        </p>
+      </div>
+
+      <div class="bg-brand-surface p-6 rounded-xl border border-brand-border">
+        <span class="text-brand-gold font-mono text-xs">04</span>
+        <h4 class="text-base font-semibold text-white mt-2 mb-2">Visual Smart Indicator</h4>
+        <p class="text-xs text-slate-400 leading-relaxed">
+          No calendar guessing. An integrated optical inspection window changes tone as mineral capture occurs, confirming when media is spent.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: 30-DAY TRANSFORMATION -->
+  <section id="timeline" class="py-24 bg-brand-surface border-y border-brand-border">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <h2 class="text-xs font-semibold tracking-widest text-brand-gold uppercase mb-3">The Clinical Timeline</h2>
+        <p class="font-serif text-3xl sm:text-4xl font-normal text-white">What happens when you eliminate chlorine</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="relative p-6 border-l-2 border-brand-gold pl-6 space-y-2">
+          <span class="text-xs uppercase font-bold tracking-widest text-brand-gold">Day 1</span>
+          <h4 class="text-lg font-semibold text-white">Immediate Barrier Relief</h4>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Zero post-shower skin tightness or scalp dryness. Hair feels instantly lighter and noticeably smoother after the very first rinse.
+          </p>
+        </div>
+
+        <div class="relative p-6 border-l-2 border-brand-gold pl-6 space-y-2">
+          <span class="text-xs uppercase font-bold tracking-widest text-brand-gold">Day 14</span>
+          <h4 class="text-lg font-semibold text-white">Restored Skin Ecology</h4>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Scalp flaking and redness decrease noticeably. Skincare serums and active topicals penetrate quicker on a calm, uncompromised barrier.
+          </p>
+        </div>
+
+        <div class="relative p-6 border-l-2 border-brand-gold pl-6 space-y-2">
+          <span class="text-xs uppercase font-bold tracking-widest text-brand-gold">Day 30</span>
+          <h4 class="text-lg font-semibold text-white">Longevity & Vibrancy</h4>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Salon hair tone and gloss remain vibrant with minimal brassiness. Measurable decrease in shower hair shedding and strengthened skin moisture retention.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4: DERMATOLOGIST VALIDATION & REVIEWS -->
+  <section id="reviews" class="py-24 max-w-5xl mx-auto px-6">
+    <div class="bg-gradient-to-br from-brand-card to-brand-surface p-10 md:p-14 rounded-3xl border border-brand-border relative text-center">
+      <div class="flex justify-center text-brand-gold mb-6">
+        <i data-lucide="quote" class="w-10 h-10 stroke-1"></i>
+      </div>
+      <blockquote class="font-serif text-xl md:text-2xl text-slate-100 font-light italic leading-relaxed max-w-3xl mx-auto">
+        "As a dermatologist, I advise patients that clean water is non-negotiable for barrier recovery. This is not a plumbing accessory—it is medical-grade preventative skincare engineered into luxury design."
+      </blockquote>
+      <div class="mt-8 space-y-1">
+        <p class="text-sm font-semibold text-white tracking-wider uppercase">Dr. Elena Vance, MD, FAAD</p>
+        <p class="text-xs text-brand-muted">Board-Certified Dermatologist & Skin Longevity Researcher</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 5: PRICING / OFFER STACK -->
+  <section id="pricing" class="py-24 bg-brand-surface border-t border-brand-border">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="text-center max-w-xl mx-auto mb-16">
+        <h2 class="text-xs font-semibold tracking-widest text-brand-gold uppercase mb-3">The Investment</h2>
+        <p class="font-serif text-3xl sm:text-4xl font-normal text-white">Select Your Ritual Experience</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
+        <!-- Option 1: Subscription (Recommended) -->
+        <div class="bg-brand-card p-8 sm:p-10 rounded-3xl border-2 border-brand-gold relative flex flex-col justify-between shadow-2xl">
+          <div class="absolute -top-3 right-6 bg-brand-gold text-black text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+            Most Popular (84%)
+          </div>
+
+          <div>
+            <span class="text-xs text-brand-gold uppercase font-semibold tracking-wider">The Complete Ritual</span>
+            <h3 class="text-2xl font-bold text-white mt-1">Fixture + Auto-Replenish</h3>
+            <p class="text-xs text-slate-400 mt-2">Continuous skin and scalp protection with quarterly cartridge refills.</p>
+            
+            <div class="mt-6 flex items-baseline space-x-2">
+              <span class="text-4xl font-serif text-white font-bold">$219</span>
+              <span class="text-xs text-slate-400">/ starter kit</span>
+            </div>
+            <p class="text-[11px] text-brand-gold mt-1">Then $35 every 90 days. Pause, delay, or cancel anytime with one click.</p>
+
+            <ul class="mt-8 space-y-3 text-xs text-slate-300">
+              <li class="flex items-center space-x-3">
+                <i data-lucide="check" class="w-4 h-4 text-brand-gold"></i>
+                <span>Machined C360 Solid Brass Showerhead</span>
+              </li>
+              <li class="flex items-center space-x-3">
+                <i data-lucide="check" class="w-4 h-4 text-brand-gold"></i>
+                <span>1x Pre-Installed 5-Stage Filter Core</span>
+              </li>
+              <li class="flex items-center space-x-3">
+                <i data-lucide="check" class="w-4 h-4 text-brand-gold"></i>
+                <span>Lifetime Hardware Warranty Included</span>
+              </li>
+              <li class="flex items-center space-x-3">
+                <i data-lucide="check" class="w-4 h-4 text-brand-gold"></i>
+                <span>Free Express Global Delivery</span>
+              </li>
+            </ul>
+          </div>
+
+          <button class="mt-10 w-full bg-brand-gold hover:bg-brand-goldDark text-black font-bold py-4 rounded-full text-xs uppercase tracking-widest transition-all">
+            Begin The Ritual — $219
+          </button>
+        </div>
+
+        <!-- Option 2: Standalone -->
+        <div class="bg-brand-card/60 p-8 sm:p-10 rounded-3xl border border-brand-border flex flex-col justify-between">
+          <div>
+            <span class="text-xs text-slate-400 uppercase font-semibold tracking-wider">One-Time Purchase</span>
+            <h3 class="text-2xl font-bold text-white mt-1">The Starter Set</h3>
+            <p class="text-xs text-slate-400 mt-2">Single hardware purchase without ongoing cartridge replenishment.</p>
+            
+            <div class="mt-6 flex items-baseline space-x-2">
+              <span class="text-4xl font-serif text-white font-bold">$259</span>
+              <span class="text-xs text-slate-400">/ one-time</span>
+            </div>
+            <p class="text-[11px] text-slate-500 mt-1">Replacement cartridges purchased separately at regular price.</p>
+
+            <ul class="mt-8 space-y-3 text-xs text-slate-400">
+              <li class="flex items-center space-x-3">
+                <i data-lucide="check" class="w-4 h-4 text-slate-400"></i>
+                <span>Machined C360 Solid Brass Showerhead</span>
+              </li>
+              <li class="flex items-center space-x-3">
+                <i data-lucide="check" class="w-4 h-4 text-slate-400"></i>
+                <span>1x Pre-Installed 5-Stage Filter Core</span>
+              </li>
+              <li class="flex items-center space-x-3">
+                <i data-lucide="check" class="w-4 h-4 text-slate-400"></i>
+                <span>1-Year Standard Limited Warranty</span>
+              </li>
+            </ul>
+          </div>
+
+          <button class="mt-10 w-full bg-transparent hover:bg-white/5 border border-brand-border text-white font-bold py-4 rounded-full text-xs uppercase tracking-widest transition-all">
+            Purchase Standalone — $259
+          </button>
+        </div>
+      </div>
+
+      <!-- Risk Reversal Banner -->
+      <div class="mt-12 text-center p-6 rounded-2xl bg-brand-card/40 border border-brand-border flex flex-col sm:flex-row items-center justify-center space-y-2 sm:space-y-0 sm:space-x-4">
+        <i data-lucide="shield" class="w-6 h-6 text-brand-gold"></i>
+        <p class="text-xs text-slate-300">
+          <strong class="text-white uppercase tracking-wider">90-Day Skin & Hair Guarantee:</strong> If you do not feel an unmistakable improvement in your skin and hair, return it for a 100% full refund. We cover the return freight.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 6: FAQ ACCORDION -->
+  <section class="py-24 max-w-4xl mx-auto px-6">
+    <div class="text-center mb-16">
+      <h2 class="text-xs font-semibold tracking-widest text-brand-gold uppercase mb-3">Questions & Answers</h2>
+      <p class="font-serif text-3xl font-normal text-white">Frequently Asked Questions</p>
+    </div>
+
+    <div class="space-y-4">
+      <details class="group bg-brand-surface p-6 rounded-xl border border-brand-border cursor-pointer">
+        <summary class="flex justify-between items-center text-sm font-semibold text-white list-none">
+          <span>Will this fit my existing bathroom setup?</span>
+          <i data-lucide="chevron-down" class="w-4 h-4 text-brand-gold transition-transform group-open:rotate-180"></i>
+        </summary>
+        <p class="mt-4 text-xs text-slate-400 leading-relaxed">
+          Yes. It uses universal standard 1/2" NPT/G1/2 threading compatible with all standard American, European, and international shower arms. Installation requires no plumbing experience or tools and takes under 90 seconds.
+        </p>
+      </details>
+
+      <details class="group bg-brand-surface p-6 rounded-xl border border-brand-border cursor-pointer">
+        <summary class="flex justify-between items-center text-sm font-semibold text-white list-none">
+          <span>How often do I need to change the filter core?</span>
+          <i data-lucide="chevron-down" class="w-4 h-4 text-brand-gold transition-transform group-open:rotate-180"></i>
+        </summary>
+        <p class="mt-4 text-xs text-slate-400 leading-relaxed">
+          Every 90 days for a regular two-person household. The transparent visual gauge will also provide physical confirmation when internal media has reached capacity.
+        </p>
+      </details>
+
+      <details class="group bg-brand-surface p-6 rounded-xl border border-brand-border cursor-pointer">
+        <summary class="flex justify-between items-center text-sm font-semibold text-white list-none">
+          <span>Will this decrease my shower water pressure?</span>
+          <i data-lucide="chevron-down" class="w-4 h-4 text-brand-gold transition-transform group-open:rotate-180"></i>
+        </summary>
+        <p class="mt-4 text-xs text-slate-400 leading-relaxed">
+          No. Unlike basic filters that restrict flow, our 280 conical micro-jets utilize Bernoulli air-induction to accelerate water velocity, actively boosting perceived skin pressure while maintaining water efficiency.
+        </p>
+      </details>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-brand-border py-12 bg-brand-dark text-xs text-brand-muted">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+      <div class="font-serif text-lg tracking-[0.2em] text-brand-gold uppercase">A U R A</div>
+      <p>© 2026 AURA Fixtures Corp. All rights reserved.</p>
+      <div class="flex space-x-6">
+        <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+        <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+        <a href="#" class="hover:text-white transition-colors">Lab Reports</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Initialize Lucide Icons -->
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
